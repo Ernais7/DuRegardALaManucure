@@ -1,0 +1,41 @@
+.bar {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  height: 100px;
+  background-color: #fff5fd;
+  &__logo--image {
+    height: 80px;
+    padding: 10px 30px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 450px;
+    &-item {
+      display: flex;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    padding: 3px 8px;
+  }
+  &__link:visited {
+    color: black;
+  }
+  &__link:hover {
+    color: white;
+    outline: #d68795 solid;
+    border-radius: 5px;
+    padding: 3px 8px;
+    background-color: #d68795;
+  }
+}
