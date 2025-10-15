@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
 }
-.divMains {
+.divHand {
   width: 100%;
   &__image {
     width: 100%;
@@ -14,31 +14,51 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  &__first{
+  &__first {
     font-family: cinzel, serif;
     margin-top: 40px;
     font-weight: 200;
     font-size: 38px;
-    display: flex;  
+    display: flex;
     justify-content: center;
     text-shadow: 2px 3px 5px;
   }
   &__second {
     font-family: cinzel, serif;
     font-size: 24px;
-    display: flex;  
+    display: flex;
     font-weight: 160;
     justify-content: end;
-    margin-top: 160px;  
+    margin-top: 160px;
     margin-right: 30px;
   }
   &__three {
     font-family: cinzel, serif;
     font-size: 20px;
     font-weight: 200;
-    display: flex;  
+    display: flex;
     justify-content: start;
     margin-left: 30px;
     margin-top: 190px;
+  }
+}
+.buttonHand {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: end;
+  &__Appointment {
+    border: none;
+    padding: 26px;
+    background-color: #d68795;
+    border-radius: 15px;
+    font-family: cinzel, sherif;
+    color: white;
+    font-size: 20px;
+    margin-top: 630px;
+    margin-right: 30px;
+    margin-left: 815px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
 }
