@@ -1,14 +1,16 @@
 import React from "react";
 import Header from "../components/Header";
 import MainHome from "../components/MainHome";
+import ServicesBanner from "../components/ServicesBanner";
+import Done from "../components/Done";
 
-function Home() {
-    return (
-        <>
-        <Header />
-        <MainHome />
-        </>
-    )
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <MainHome />
+      <ServicesBanner />
+      <Done />
+    </>
+  );
 }
-
-export default Home;

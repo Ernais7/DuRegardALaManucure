@@ -1,0 +1,43 @@
+.servicesBanner {
+  background: linear-gradient(to bottom, #fff5fd 80%, #ffffff 100%);
+  justify-content: space-between;
+  height: 350px;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  &__imageContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 200px;
+  }
+  &__image {
+    height: 450px;
+  }
+  &__textContainer {
+    font-family: cinzel, serif;
+    margin-left: 100px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 28px;
+    font-weight: 200;
+    margin: 0px;
+  }
+  &__button {
+    border: none;
+    margin-top: 20px;
+    padding: 26px;
+    background-color: #d68795;
+    border-radius: 15px;
+    font-family: cinzel, sherif;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+}

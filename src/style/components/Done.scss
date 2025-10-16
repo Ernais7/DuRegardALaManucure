@@ -1,0 +1,22 @@
+.doneContain{
+    background: linear-gradient(to top, #fff5fd 80%, #ffffff 100%);
+    margin-top: 100px;
+    margin-bottom: 200px;
+    &__title{
+        display: flex;
+        justify-content: center;
+        font-family: cinzel, serif;
+        font-size: 28px;
+        &--string{
+            font-weight: 200;
+        }
+    }
+    &__images{
+        display: flex;
+        justify-content: space-evenly;
+        &--pic{
+            height: 350px;
+            margin-bottom: 50px;
+        }
+    }
+}
