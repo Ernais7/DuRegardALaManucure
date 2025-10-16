@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/DuRegardALaManucure/static/css/main.92304848.css",
-    "main.js": "/DuRegardALaManucure/static/js/main.642f4286.js",
+    "main.js": "/DuRegardALaManucure/static/js/main.bfd44c4f.js",
     "static/js/453.7913a9da.chunk.js": "/DuRegardALaManucure/static/js/453.7913a9da.chunk.js",
     "static/media/imageaccueil.png": "/DuRegardALaManucure/static/media/imageaccueil.40f01498315327164e26.png",
     "static/media/serviceImg.png": "/DuRegardALaManucure/static/media/serviceImg.fccf75419f2e10f60972.png",
     "static/media/logo.png": "/DuRegardALaManucure/static/media/logo.85a84dfe533325da7b16.png",
     "index.html": "/DuRegardALaManucure/index.html",
     "main.92304848.css.map": "/DuRegardALaManucure/static/css/main.92304848.css.map",
-    "main.642f4286.js.map": "/DuRegardALaManucure/static/js/main.642f4286.js.map",
+    "main.bfd44c4f.js.map": "/DuRegardALaManucure/static/js/main.bfd44c4f.js.map",
     "453.7913a9da.chunk.js.map": "/DuRegardALaManucure/static/js/453.7913a9da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92304848.css",
-    "static/js/main.642f4286.js"
+    "static/js/main.bfd44c4f.js"
   ]
 }
