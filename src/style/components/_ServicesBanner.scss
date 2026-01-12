@@ -6,15 +6,47 @@
   margin-top: 80px;
   display: flex;
   flex-direction: row-reverse;
+
   &__imageContainer {
     display: flex;
     justify-content: end;
     align-items: center;
     margin-right: 200px;
+
+    // Tablette
+    @media screen and (max-width: 1024px) {
+      margin-right: 50px;
+    }
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+      justify-content: center;
+      order: 2;
+      margin-top: 30px;
+    }
   }
+
   &__image {
     height: 450px;
+
+    // Tablette
+    @media screen and (max-width: 1024px) {
+      height: 350px;
+    }
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      height: 280px;
+      max-width: 100%;
+    }
+
+    // Très petit mobile
+    @media screen and (max-width: 375px) {
+      height: 230px;
+    }
   }
+
   &__textContainer {
     font-family: cinzel, serif;
     margin-left: 100px;
@@ -22,12 +54,39 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+
+    // Tablette
+    @media screen and (max-width: 1024px) {
+      margin-left: 50px;
+      font-size: 16px;
+    }
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+      font-size: 14px;
+      order: 1;
+      text-align: center;
+      gap: 20px;
+    }
   }
+
   &__title {
     font-size: 28px;
     font-weight: 200;
     margin: 0px;
+
+    // Tablette
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+    }
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
   }
+
   &__button {
     border: none;
     margin-top: 20px;
@@ -39,5 +98,37 @@
     font-size: 20px;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    // Tablette
+    @media screen and (max-width: 1024px) {
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      padding: 16px 24px;
+      font-size: 16px;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // Tablette
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    margin-top: 60px;
+    padding: 40px 0;
+  }
+
+  // Mobile
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    height: auto;
+    margin-top: 40px;
+    padding: 30px 0px;
   }
 }

@@ -1,25 +1,52 @@
+/* --- STYLE GLOBAL & DESKTOP --- */
 .bar {
   display: flex;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   height: 100px;
   background-color: #fff5fd;
+  align-items: center; // Centre verticalement logo et menu
+  position: relative; // Important pour positionner le menu mobile
+  z-index: 1000; // S'assure que le menu passe au dessus du reste
+
   &__logo--image {
     height: 80px;
     padding: 10px 30px;
   }
+
+  /* Le Bouton Burger (Caché sur PC) */
+  &__burger {
+    display: none; // Invisible sur ordinateur
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 30px; // Marge à droite pour le mobile
+
+    span {
+      height: 3px;
+      width: 25px;
+      background-color: #333;
+      margin-bottom: 4px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+  }
+
   &__nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
   }
+
   &__list {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
     width: 100%;
     margin-left: 0;
+
+    // Ton réglage Desktop Strict
     padding-left: 450px;
+
     &-item,
     a {
       display: flex;
@@ -29,18 +56,80 @@
       color: black;
     }
   }
+
   &__link {
     text-decoration: none;
     padding: 3px 8px;
+    transition: 0.3s;
   }
+
   &__link:visited {
     color: black;
   }
+
   &__link:hover {
     color: white;
     outline: #d68795 solid;
     border-radius: 5px;
     padding: 3px 8px;
     background-color: #d68795;
+  }
+
+  /* --- RESPONSIVE MOBILE & TABLETTE (< 1024px) --- */
+  @media (max-width: 1024px) {
+    justify-content: space-between; // Ecarte Logo à gauche et Burger à droite
+    padding: 0 10px; // Un peu d'espace sur les côtés
+
+    // 1. On affiche le bouton Burger
+    &__burger {
+      display: flex;
+
+      // Animation petite croix quand ouvert (optionnel mais joli)
+      &.active {
+        span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        span:nth-child(2) {
+          opacity: 0;
+        }
+        span:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
+      }
+    }
+
+    // 2. On cache la navigation par défaut
+    &__nav {
+      position: absolute;
+      top: 100px; // Juste en dessous de la barre rose (hauteur du header)
+      left: 0;
+      width: 100%;
+      background-color: #fff5fd; // Même couleur de fond
+      flex-direction: column;
+      align-items: center;
+
+      // Système d'ouverture/fermeture
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out; // Animation fluide
+
+      // Ombre pour détacher le menu du reste de la page
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+
+      &.open {
+        max-height: 400px; // Hauteur suffisante pour voir les liens
+        padding-bottom: 20px;
+      }
+    }
+
+    // 3. On remet la liste en colonne et on annule les marges PC
+    &__list {
+      flex-direction: column;
+      padding-left: 0; // Annulation du 450px
+      padding-right: 0;
+      align-items: center;
+      gap: 25px; // Espace entre les liens
+      margin-top: 20px;
+    }
   }
 }

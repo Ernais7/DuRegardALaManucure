@@ -1,28 +1,46 @@
 .customersReview {
   padding: 4rem 2rem;
-  background-color: #fff5f8; // Un rose très pâle pour contraster légèrement
+  background-color: #fff5f8;
   text-align: center;
 
   &__title {
-    font-family: "Cinzel", serif; // Ou ta police de titre actuelle
+    font-family: "Cinzel", serif;
     font-size: 1.8rem;
     color: #5a5a5a;
     margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    // Tablette
+    @media screen and (max-width: 1024px) {
+      font-size: 1.6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      padding: 0 15px;
+    }
   }
 
   &__container {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    flex-wrap: wrap; // Pour que ça passe à la ligne sur mobile
+    flex-wrap: wrap;
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      gap: 1.5rem;
+    }
   }
 
   &__card {
     background: white;
     padding: 2rem;
-    border-radius: 15px; // Forme un peu arrondie douce
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     width: 300px;
     display: flex;
@@ -33,12 +51,30 @@
     &:hover {
       transform: translateY(-5px);
     }
+
+    // Tablette
+    @media screen and (max-width: 1024px) {
+      width: 280px;
+      padding: 1.8rem;
+    }
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      max-width: 350px;
+      padding: 1.5rem;
+    }
   }
 
   &__stars {
-    color: #d4a373; // Couleur dorée/beige pour les étoiles
+    color: #d4a373;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      font-size: 1.3rem;
+    }
   }
 
   &__comment {
@@ -46,6 +82,12 @@
     color: #666;
     margin-bottom: 1.5rem;
     line-height: 1.4;
+
+    // Mobile
+    @media screen and (max-width: 767px) {
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
   }
 
   &__info {
@@ -61,6 +103,21 @@
     .customersReview__service {
       font-size: 0.9rem;
       color: #999;
+
+      // Mobile
+      @media screen and (max-width: 767px) {
+        font-size: 0.85rem;
+      }
     }
+  }
+
+  // Tablette
+  @media screen and (max-width: 1024px) {
+    padding: 3rem 1.5rem;
+  }
+
+  // Mobile
+  @media screen and (max-width: 767px) {
+    padding: 2.5rem 1rem;
   }
 }
