@@ -1,0 +1,66 @@
+.customersReview {
+  padding: 4rem 2rem;
+  background-color: #fff5f8; // Un rose très pâle pour contraster légèrement
+  text-align: center;
+
+  &__title {
+    font-family: "Cinzel", serif; // Ou ta police de titre actuelle
+    font-size: 1.8rem;
+    color: #5a5a5a;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; // Pour que ça passe à la ligne sur mobile
+  }
+
+  &__card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px; // Forme un peu arrondie douce
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__stars {
+    color: #d4a373; // Couleur dorée/beige pour les étoiles
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__comment {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    .customersReview__name {
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #333;
+    }
+
+    .customersReview__service {
+      font-size: 0.9rem;
+      color: #999;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import imageServices from "../assets/Image/Accueil/serviceImg.png";
-import "../style/components/ServicesBanner.scss";
+import "../style/components/_ServicesBanner.scss";
 
 function ServicesBanner() {
   return (

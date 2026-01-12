@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/components/Done.scss";
+import "../style/components/_Done.scss";
 import img1 from "../assets/Image/Accueil/doneImg1.png";
 import img2 from "../assets/Image/Accueil/doneImg2.png";
 import img3 from "../assets/Image/Accueil/doneImg3.png";

@@ -1,0 +1,64 @@
+.footer {
+  background-color: #1a1a1a; // Le fond noir de ta maquette
+  color: white;
+  padding: 3rem 2rem 1rem;
+  margin-top: auto; // Utile si tu utilises flex sur le body pour coller le footer en bas
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__column {
+    flex: 1;
+    min-width: 250px;
+
+    h3,
+    h4 {
+      font-family: "Cinzel", serif;
+      margin-bottom: 1.5rem;
+      color: #fce4ec; // Un rappel de rose très clair
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.8rem;
+
+        a {
+          color: #ccc;
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+  }
+}

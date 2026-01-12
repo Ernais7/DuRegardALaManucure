@@ -1,6 +1,6 @@
 import React from "react";
 import imageHand from "../assets/Image/Accueil/imageaccueil.png";
-import "../style/components/MainHome.scss";
+import "../style/components/_MainHome.scss";
 
 function MainHome() {
   return (
