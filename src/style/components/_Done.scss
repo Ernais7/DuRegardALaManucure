@@ -1,5 +1,12 @@
 .doneContain {
-  background: linear-gradient(to top, #fff5fd 80%, #ffffff 100%);
+  background:
+    linear-gradient(to bottom, #ffffff 0%, #fff5fd 20%),
+    /* Dégradé du haut */ linear-gradient(to top, #ffffff 0%, #fff5fd 20%); /* Dégradé du bas */
+
+  /* On s'assure que les deux ne se chevauchent pas bizarrement */
+  background-repeat: no-repeat;
+  background-size: 100% 50%; /* Chaque dégradé prend la moitié de la hauteur */
+  background-position: top, bottom;
   margin-top: 100px;
   margin-bottom: 200px;
 
@@ -7,22 +14,26 @@
     display: flex;
     justify-content: center;
     font-family: cinzel, serif;
-    font-size: 28px;
 
     &--string {
-      font-weight: 200;
-    }
+      font-family: "Cinzel", serif;
+      font-size: 1.8rem;
+      color: #5a5a5a;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
 
-    // Tablette
-    @media screen and (max-width: 1024px) {
-      font-size: 24px;
-    }
+      // Tablette
+      @media screen and (max-width: 1024px) {
+        font-size: 24px;
+      }
 
-    // Mobile
-    @media screen and (max-width: 767px) {
-      font-size: 20px;
-      padding: 0 15px;
-      text-align: center;
+      // Mobile
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+        padding: 0 15px;
+        text-align: center;
+      }
     }
   }
 

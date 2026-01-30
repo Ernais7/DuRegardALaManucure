@@ -39,6 +39,7 @@
     @media screen and (max-width: 767px) {
       height: 280px;
       max-width: 100%;
+      border-radius: 45px;
     }
 
     // Très petit mobile
@@ -72,9 +73,12 @@
   }
 
   &__title {
-    font-size: 28px;
-    font-weight: 200;
-    margin: 0px;
+    font-family: "Cinzel", serif;
+    font-size: 1.8rem;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 
     // Tablette
     @media screen and (max-width: 1024px) {
@@ -107,10 +111,9 @@
 
     // Mobile
     @media screen and (max-width: 767px) {
-      padding: 16px 24px;
+      padding: 16px 40px;
       font-size: 16px;
       margin-top: 10px;
-      width: 100%;
       max-width: 300px;
       margin-left: auto;
       margin-right: auto;
