@@ -1,6 +1,6 @@
 .customersReview {
   padding: 4rem 2rem;
-  background-color: #fff5f8;
+  background: linear-gradient(to top, #fff5fd 80%, #ffffff 100%);
   text-align: center;
 
   &__title {
@@ -10,14 +10,13 @@
     margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 500;
 
-    // Tablette
     @media screen and (max-width: 1024px) {
       font-size: 1.6rem;
       margin-bottom: 2.5rem;
     }
 
-    // Mobile
     @media screen and (max-width: 767px) {
       font-size: 1.4rem;
       margin-bottom: 2rem;
@@ -31,7 +30,6 @@
     gap: 2rem;
     flex-wrap: wrap;
 
-    // Mobile
     @media screen and (max-width: 767px) {
       gap: 1.5rem;
     }
@@ -52,13 +50,11 @@
       transform: translateY(-5px);
     }
 
-    // Tablette
     @media screen and (max-width: 1024px) {
       width: 280px;
       padding: 1.8rem;
     }
 
-    // Mobile
     @media screen and (max-width: 767px) {
       width: 100%;
       max-width: 350px;
@@ -71,7 +67,6 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
 
-    // Mobile
     @media screen and (max-width: 767px) {
       font-size: 1.3rem;
     }
@@ -83,7 +78,6 @@
     margin-bottom: 1.5rem;
     line-height: 1.4;
 
-    // Mobile
     @media screen and (max-width: 767px) {
       font-size: 0.95rem;
       margin-bottom: 1.2rem;
@@ -104,19 +98,16 @@
       font-size: 0.9rem;
       color: #999;
 
-      // Mobile
       @media screen and (max-width: 767px) {
         font-size: 0.85rem;
       }
     }
   }
 
-  // Tablette
   @media screen and (max-width: 1024px) {
     padding: 3rem 1.5rem;
   }
 
-  // Mobile
   @media screen and (max-width: 767px) {
     padding: 2.5rem 1rem;
   }

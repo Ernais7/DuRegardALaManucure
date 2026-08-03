@@ -1,5 +1,6 @@
 import React from "react";
-import "../style/components/_Footer.scss"; // N'oublie pas de créer ce fichier SCSS
+import logo from "../assets/Image/Logo/logo.png";
+import "../style/components/_Footer.scss";
 
 function Footer() {
   return (
@@ -7,7 +8,9 @@ function Footer() {
       <div className="footer__content">
         {/* Colonne 1 : Logo / Marque */}
         <div className="footer__column">
-          <h3 className="footer__logo">Du Regard à la Manucure</h3>
+          <div className="bar__logo">
+            <img src={logo} alt="Logo" className="bar__logo--image" />
+          </div>
           <p>Votre institut de beauté à Aincourt.</p>
         </div>
 

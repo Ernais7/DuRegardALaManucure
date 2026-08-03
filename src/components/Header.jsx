@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Image/Logo/logo.png"; // Vérifie que ton chemin d'image est bon
+import logo from "../assets/Image/Logo/logo.png";
 import "../style/components/_Header.scss";
 
 function Header() {
-  // Création de l'état pour gérer l'ouverture du menu
   const [isOpen, setIsOpen] = useState(false);
 
-  // Fonction pour basculer l'état (ouvert <-> fermé)
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Fonction pour fermer le menu quand on clique sur un lien
   const closeMenu = () => {
     setIsOpen(false);
   };
