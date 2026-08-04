@@ -1,6 +1,7 @@
 import React from "react";
 import imageServices from "../assets/Image/Accueil/serviceImg.png";
 import "../style/components/_ServicesBanner.scss";
+import { Link } from "react-router-dom";
 
 function ServicesBanner() {
   return (
@@ -18,11 +19,13 @@ function ServicesBanner() {
         </h4>
         <p className="servicesBanner__description">
           Chez Du Regard à la Manucure, révélez l’éclat de <br />
-          vos mains et l’intensité de votre regard <br />dans une ambiance chaleureuse
-          et raffinée.
+          vos mains et l’intensité de votre regard <br />
+          dans une ambiance chaleureuse et raffinée.
         </p>
         <div className="servicesBanner__buttonContainer">
-          <button className="servicesBanner__button">Nos prestations</button>
+          <Link to="/services">
+            <button className="servicesBanner__button">Nos prestations</button>
+          </Link>
         </div>
       </div>
     </section>

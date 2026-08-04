@@ -1,6 +1,7 @@
 import React from "react";
 import imageHand from "../assets/Image/Accueil/imageaccueil.png";
 import "../style/components/_MainHome.scss";
+import { Link } from "react-router-dom";
 
 function MainHome() {
   return (
@@ -25,9 +26,11 @@ function MainHome() {
         </h3>
       </div>
       <div className="buttonHand">
-        <button className="buttonHand__Appointment">
-          Prendre rendez-vous !
-        </button>
+        <Link to="/contact">
+          <button className="buttonHand__Appointment">
+            Prendre rendez-vous !
+          </button>
+        </Link>
       </div>
     </div>
   );

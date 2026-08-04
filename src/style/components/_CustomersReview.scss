@@ -33,6 +33,9 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 3rem; // Laisse de la place pour les flèches sur les côtés
+    @media screen and (max-width: 767px) {
+      padding: 0; // On retire l'espace des flèches sur mobile
+    }
   }
 
   // LA PISTE QUI DEFILE
@@ -43,7 +46,7 @@
     scroll-behavior: smooth;
     padding: 1rem 0; // Permet de ne pas couper le box-shadow des cartes
     width: 100%;
-    
+
     @media screen and (max-width: 767px) {
       gap: 1.5rem;
     }
@@ -137,7 +140,9 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition:
+      background 0.3s ease,
+      color 0.3s ease;
 
     &:hover {
       background: #d4a373; // Reprend la couleur de tes étoiles
@@ -172,7 +177,9 @@
     background: #e0e0e0;
     border: none;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition:
+      background 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
       background: #c0c0c0;
