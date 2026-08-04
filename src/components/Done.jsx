@@ -8,7 +8,7 @@ function Done() {
   return (
     <section className="doneContain">
       <div className="doneContain__title">
-        <h4 className="doneContain__title--string">Nos réalisations...</h4>
+        <h4 className="doneContain__title--string">Le Salon ...</h4>
       </div>
       <div className="doneContain__images">
         <img className="doneContain__images--pic" src={img1} alt="" />

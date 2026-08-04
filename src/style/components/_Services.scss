@@ -170,8 +170,20 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.2s ease;
 
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      background-color 0.15s ease;
+
     &:hover {
+      transform: translateY(-2px);
+      box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.25);
       background-color: #c3707f;
+    }
+
+    &:active {
+      transform: translateY(0) scale(0.97);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     }
 
     &--outline {
@@ -179,10 +191,19 @@
       border: 2px solid #d68795;
       color: #d68795;
       box-shadow: none;
+      transition:
+        transform 0.15s ease,
+        background-color 0.15s ease,
+        color 0.15s ease;
 
       &:hover {
         background-color: #d68795;
         color: white;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0) scale(0.97);
       }
     }
 

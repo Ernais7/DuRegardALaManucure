@@ -7,10 +7,16 @@ import NotFound from "./pages/notFound.jsx";
 import Contact from "./pages/contact.jsx";
 import Prices from "./pages/prices.jsx";
 import Services from "./pages/services.jsx";
+import Conditions from "./pages/conditions.jsx";
+import MentionsLegales from "./pages/mentionsLegales.jsx";
 
 function AppRouter() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router
+      basename={
+        process.env.NODE_ENV === "production" ? process.env.PUBLIC_URL : ""
+      }
+    >
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -19,6 +25,8 @@ function AppRouter() {
           <Route path="/prices" element={<Prices />} />
           <Route path="/services" element={<Services />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/conditions" element={<Conditions />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Route>
       </Routes>
     </Router>

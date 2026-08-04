@@ -4,28 +4,33 @@ import "../style/components/_Prices.scss";
 
 const priceCategories = [
   {
-    title: "Manucure",
+    title: "Mains",
     items: [
-      { name: "Pose vernis semi-permanent", price: "35 €" },
-      { name: "Pose gel", price: "45 €" },
-      { name: "Remplissage gel", price: "38 €" },
-      { name: "Nail art (par ongle)", price: "3 €" },
+      { name: "Semi-permanent", price: "35 €" },
+      { name: "Dépose/ Pose semi-permanent", price: "45 €" },
+      { name: "Depose semi-permanent", price: "10 €" },
+      { name: "Gel X", price: "50 €" },
+      { name: "Pose / depose Gel X", price: "60 €" },
+      { name: "Depose Gel X", price: "20 €" },
+      { name: "Dépose pose extérieure", price: "20 €" },
+      { name: "Renfort ongles naturels", price: "40 €" },
+      { name: "Remplissage", price: "50 €" },
+      { name: "Soin Manucure + Vernis simple", price: "20 €" },
+      { name: "Decoration", price: "5 €" },
+      { name: "Nail Art", price: "1 € / doigt" },
+      { name: "Baby Bloomer / French", price: "10 €" },
+      { name: "Camaieu de couleurs", price: "5 €" },
     ],
   },
   {
-    title: "Regard",
+    title: "Pieds",
     items: [
-      { name: "Rehaussement de cils", price: "40 €" },
-      { name: "Extension de cils (pose complète)", price: "60 €" },
-      { name: "Remplissage extensions", price: "35 €" },
-      { name: "Restructuration sourcils", price: "20 €" },
-    ],
-  },
-  {
-    title: "Soins",
-    items: [
-      { name: "Soin complet mains", price: "50 €" },
-      { name: "Soin découverte", price: "65 €" },
+      { name: "Semi-Permanent", price: "40 €" },
+      { name: "Dépose/pose semi-permanent", price: "45 €" },
+      { name: "Beauté des pieds complète", price: "50 €" },
+      { name: "Beauté des pieds + Semi permanent", price: "60 €" },
+      { name: "Dépose semi-permanent", price: "15 €" },
+      { name: "Soin + vernis classique", price: "20 €" },
     ],
   },
 ];
@@ -36,7 +41,7 @@ export default function Prices() {
       <section className="prices__intro">
         <h1 className="prices__title">Nos Tarifs</h1>
         <p className="prices__text">
-          Des prestations sur-mesure pour sublimer vos mains et votre regard.
+          Des prestations sur-mesure pour sublimer vos mains et vos pieds.
           Tarifs indicatifs, n'hésitez pas à nous contacter pour toute
           question.
         </p>

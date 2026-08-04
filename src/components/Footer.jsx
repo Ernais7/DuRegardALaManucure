@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/Image/Logo/logo.png";
 import "../style/components/_Footer.scss";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -19,13 +20,13 @@ function Footer() {
           <h4>Liens utiles</h4>
           <ul>
             <li>
-              <a href="/mentions-legales">Mentions Légales</a>
+              <Link to="/mentions-legales">Mentions Légales</Link>
             </li>
             <li>
-              <a href="/tarifs">Nos Tarifs</a>
+              <Link to="/prices">Nos Tarifs</Link>
             </li>
             <li>
-              <a href="/contact">Prendre RDV</a>
+              <Link to="/contact">Prendre RDV</Link>
             </li>
           </ul>
         </div>
@@ -33,9 +34,9 @@ function Footer() {
         {/* Colonne 3 : Contact */}
         <div className="footer__column">
           <h4>Contact</h4>
-          <p>📍 12 Rue de la Mairie, Aincourt</p>
-          <p>📞 06 00 00 00 00</p>
-          <p>✉️ contact@duregard.fr</p>
+          <p>📍 13 résidence les cadenas, 95510, Aincourt</p>
+          <p>📞 07 63 74 04 71</p>
+          <p>✉️ duregardalamanucure@gmail.com</p>
         </div>
       </div>
 

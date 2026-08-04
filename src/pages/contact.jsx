@@ -39,7 +39,7 @@ export default function Contact() {
         <div className="contact__infos">
           <h2 className="contact__subtitle">Nos coordonnées</h2>
           <p className="contact__infoLine">📍 13 résidence les cadenas, 95510, Aincourt</p>
-          <p className="contact__infoLine">📞 0763740471</p>
+          <p className="contact__infoLine">📞 07 63 74 04 71</p>
           <p className="contact__infoLine">✉️ duregardalamanucure@gmail.com</p>
         </div>
 

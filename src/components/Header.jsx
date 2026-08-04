@@ -18,7 +18,9 @@ function Header() {
     <header className="bar">
       {/* 1. Le Logo */}
       <div className="bar__logo">
-        <img src={logo} alt="Logo" className="bar__logo--image" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="bar__logo--image" />
+        </Link>
       </div>
 
       {/* 2. Le Bouton Burger (Visible uniquement sur mobile via CSS) */}
@@ -32,7 +34,6 @@ function Header() {
       </div>
 
       {/* 3. La Navigation */}
-      {/* On ajoute une classe conditionnelle "open" si isOpen est vrai */}
       <nav className={`bar__nav ${isOpen ? "open" : ""}`}>
         <ul className="bar__list">
           <li className="bar__list-item">
@@ -58,6 +59,11 @@ function Header() {
           <li className="bar__list-item">
             <Link to="/prices" className="bar__link" onClick={closeMenu}>
               Nos Tarifs
+            </Link>
+          </li>
+          <li className="bar__list-item">
+            <Link to="/conditions" className="bar__link" onClick={closeMenu}>
+              Conditions
             </Link>
           </li>
         </ul>
